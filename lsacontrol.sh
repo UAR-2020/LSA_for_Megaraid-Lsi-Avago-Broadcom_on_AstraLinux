@@ -1,6 +1,6 @@
 #!/bin/bash
 #autor: from YuryA www.uar@gmail.com
-#create: for SPbf-Kbf-SPmd
+#create: for SPbf, Kbf, SPmd
 
 # Проверяем, установлены ли необходимые утилиты
 if ! command -v dialog &> /dev/null || ! command -v sshpass &> /dev/null || ! command -v firefox &> /dev/null; then
