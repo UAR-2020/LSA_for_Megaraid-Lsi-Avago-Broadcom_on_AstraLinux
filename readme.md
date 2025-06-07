@@ -32,14 +32,23 @@
     sudo apt install zstd
 
     ar x LSA_lib_utils-1.16-1_amd64.deb
+
     zstd -d < control.tar.zst | xz > control.tar.xz
+
     zstd -d < data.tar.zst | xz > data.tar.xz
+
     ar -m -c -a sdsd /tmp/LSA_lib_utils-1.16-1_amd64.deb debian-binary control.tar.xz data.tar.xz
+
     rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
+
     ar x LSA_lib_utils2-9.00-1_amd64.deb
+
     zstd -d < control.tar.zst | xz > control.tar.xz
+
     zstd -d < data.tar.zst | xz > data.tar.xz
+
     ar -m -c -a sdsd /tmp/LSA_lib_utils2-9.00-1_amd64.deb debian-binary control.tar.xz data.tar.xz
+
     rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
 
     Сделаем все файлы исполняемыми (или сделайте команду для файлов избирательно): 
