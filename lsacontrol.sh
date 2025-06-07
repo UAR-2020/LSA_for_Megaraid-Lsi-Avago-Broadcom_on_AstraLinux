@@ -1,5 +1,5 @@
 #!/bin/bash
-#autor: from YuryA www.uar@gmail.com ElerON
+#autor: from YuryA www.uar@gmail.com
 #create: for SPbf-Kbf-SPmd
 
 # Проверяем, установлены ли необходимые утилиты
@@ -19,7 +19,7 @@ declare -A SERVERS=(
     ["192.168.0.12"]="server2 (кадры 3-й этаж)"
     ["192.168.0.13"]="server3 (сервер СОЭН)"
     ["192.168.0.14"]="server4 (сервер СКУД)"
-    ["192.168.0.15"]="serve-5 (сервер СОС)"
+    ["192.168.0.15"]="server5 (сервер СОС)"
 )
 
 # Пароль и пользователь
