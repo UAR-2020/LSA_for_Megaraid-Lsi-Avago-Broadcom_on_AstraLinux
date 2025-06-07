@@ -1,0 +1,62 @@
+В астрах, по умолчанию первому пользоватею назначаются права root,
+т.е. он наделен правом выполнять в cli команду sudo название_команды
+(никаких учеток root создавать/открывать/активировать не нужно!!!)
+
+1.    копируем каталог inst, к примеру в домашний каталог юзера
+
+2.    в cli переходим в каталог inst  командой   cd /home/имя_юзера/inst
+
+3.    выполним команду   chmod +x *.* (сделаем все файлы исполняемыми)
+
+4.    выполним команду   sudo ./install_deb.sh -s
+
+5.    на вопрос о согласии с лицензией ответим Y и нажмем Enter
+
+6.    ждем окончания установки
+
+7.    если удачно все установилось , выполним    sudo systemctl stop LsiSASH.service
+
+8.    sudo nano /opt/lsi/LSIStorageAuthority/conf/LSA.conf
+       найдем строку
+
+       # bypass authentication (use with caution)
+       bypass_authentication = 0
+
+       и заменим на 
+
+       # bypass authentication (use with caution)
+       bypass_authentication = 1
+       
+       Нажмем ctrl+o и enter (сохраним конфиг)
+
+9.    выполним    sudo systemctl start LsiSASH.service ля запуска службы
+
+10.  выполним    sudo systemctl status LsiSASH.service  (убедимся, что работает и увидим...)
+ LsiSASH.service - LSB: start and stop LSIStorageAuthority service
+   Loaded: loaded (/etc/init.d/LsiSASH; generated)
+   Active: active (running) since Fri 2024-12-06 12:35:19 MSK; 1h 18min ago
+     Docs: man:systemd-sysv-generator(8)
+    Tasks: 9 (limit: 2255)
+   Memory: 30.3M
+      CPU: 989ms
+   CGroup: /system.slice/LsiSASH.service
+           ├─1016 /opt/lsi/LSA/libs2/./slpd
+           ├─1039 nginx: master process ./nginx -p .
+           ├─1045 nginx: worker process
+           └─1134 ./LSA -start
+
+дек 06 12:34:46 astra1 systemd[1]: Starting LSB: start and stop LSIStorageAuthority service...
+дек 06 12:34:46 astra1 LsiSASH[451]: /etc/init.d/LsiSASH: строка 25: rpm: команда не найдена
+дек 06 12:35:19 astra1 LsiSASH[451]: Starting LSI Storage Authority:                           [  OK  ]
+дек 06 12:35:19 astra1 systemd[1]: Started LSB: start and stop LSIStorageAuthority service. 
+
+11. заходим в веб-браузер по адресу localhost:2463 ( или http://localhost:2463) или 127.0.0.1:2463 (или  http://127.0.0.1:2463)
+
+12. выполним    sudo systemctl stop LsiSASH.service для остановки службы
+
+13. выполним    sudo systemctl disable LsiSASH.service для отключения автостарта службы (чтобы исключить 100% загрузку CPU в будущем)
+
+14. Установите нужные паке и пользуйтесь оснасткой lsacontrol.sh
+
+15. Внимательно прочтите readme.md данного проекта.
+    
