@@ -7,9 +7,12 @@
 версию ПО WebGUIRelease_Linux_8.004.010.000, которое по своим характеристикам удовлетворяет требованиям поставленной задачи.
 
 # Однако, при установке пакетов возникла ошибка с сообщением о неподдерживаемом сжатии.
-В ходе выяснения причин отказа в распаковке файлов было найдено решение, которое объяснило природу происходящего и пути решения, без необходимости sysdig/ptrace отладки происходящего (благодарю авторов постов за рассуждения, оставленные на просторах Интернет  «https://unix.stackexchange.com/questions/669004/zst-compression-not-supported-by-apt-dpkg», предельно ясно и не требует языкового перевода).
-If you are running Debian < 12 and need to install a .deb package that uses zstd, you can repack it:
- Extract files from the archive
+В ходе выяснения причин отказа в распаковке файлов было найдено решение, которое объяснило природу происходящего и пути решения, без необходимости sysdig/ptrace отладки происходящего
+(благодарю авторов постов за рассуждения, оставленные на просторах Интернет  «https://unix.stackexchange.com/questions/669004/zst-compression-not-supported-by-apt-dpkg», 
+предельно ясно и не требует языкового перевода).
+
+    If you are running Debian < 12 and need to install a .deb package that uses zstd, you can repack it:
+    Extract files from the archive
     ar x some-package.deb
      Uncompress zstd files an re-compress them using xz
     zstd -d < control.tar.zst | xz > control.tar.xz
@@ -42,8 +45,8 @@ You should now be able to install the newly generated package:
 chmod +x *.*  
 
 Установим, уже перепакованное программное обеспечение (подробнее о ключах запуска смотрите в файлах архива):
- sudo ./install_deb.sh -s
-(при запросе на вопрос о согласии с лицензией ответим Y и нажмем Enter)
+    sudo ./install_deb.sh -s
+    (при запросе на вопрос о согласии с лицензией ответим Y и нажмем Enter)
 
 Просмотрим состояние, установленной службы:
 sudo systemctl status LsiSASH.service
