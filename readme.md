@@ -13,16 +13,16 @@
 
     If you are running Debian < 12 and need to install a .deb package that uses zstd, you can repack it:
     Extract files from the archive
-    ar x some-package.deb
-     Uncompress zstd files an re-compress them using xz
-    zstd -d < control.tar.zst | xz > control.tar.xz
-    zstd -d < data.tar.zst | xz > data.tar.xz
+        ar x some-package.deb
+    Uncompress zstd files an re-compress them using xz
+        zstd -d < control.tar.zst | xz > control.tar.xz
+        zstd -d < data.tar.zst | xz > data.tar.xz
     Re-create the Debian package in /tmp/
-    ar -m -c -a sdsd /tmp/some-package.deb debian-binary control.tar.xz data.tar.xz
- Clean up
-    rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
-You should now be able to install the newly generated package:
-    apt-get install /tmp/some-package.deb
+        ar -m -c -a sdsd /tmp/some-package.deb debian-binary control.tar.xz data.tar.xz
+    Clean up
+        rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
+    You should now be able to install the newly generated package:
+        apt-get install /tmp/some-package.deb
 
 # Перейдем в каталог распакованного архива WebGUIRelease_Linux_8.004.010.000.zip и выполним рекомендуемые действия изложенные выше, задействуя в apt расширенный репозиторий:
 
