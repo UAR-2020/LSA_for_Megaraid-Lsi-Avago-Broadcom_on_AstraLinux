@@ -10,31 +10,33 @@
 ¬ ходе вы€снени€ причин отказа в распаковке файлов было найдено решение, которое объ€снило природу происход€щего и пути решени€, без необходимости sysdig/ptrace отладки происход€щего (благодарю авторов постов за рассуждени€, оставленные на просторах »нтернет  Ђhttps://unix.stackexchange.com/questions/669004/zst-compression-not-supported-by-apt-dpkgї, предельно €сно и не требует €зыкового перевода).
 If you are running Debian < 12 and need to install a .deb package that uses zstd, you can repack it:
  Extract files from the archive
-ar x some-package.deb
- Uncompress zstd files an re-compress them using xz
-zstd -d < control.tar.zst | xz > control.tar.xz
-zstd -d < data.tar.zst | xz > data.tar.xz
- Re-create the Debian package in /tmp/
-ar -m -c -a sdsd /tmp/some-package.deb debian-binary control.tar.xz data.tar.xz
+    ar x some-package.deb
+     Uncompress zstd files an re-compress them using xz
+    zstd -d < control.tar.zst | xz > control.tar.xz
+    zstd -d < data.tar.zst | xz > data.tar.xz
+    Re-create the Debian package in /tmp/
+    ar -m -c -a sdsd /tmp/some-package.deb debian-binary control.tar.xz data.tar.xz
  Clean up
-rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
+    rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
 You should now be able to install the newly generated package:
-apt-get install /tmp/some-package.deb
+    apt-get install /tmp/some-package.deb
 
 # ѕерейдем в каталог распакованного архива WebGUIRelease_Linux_8.004.010.000.zip и выполним рекомендуемые действи€ изложенные выше, задейству€ в apt расширенный репозиторий:
 
-sudo apt update
-sudo apt install zstd
-ar x LSA_lib_utils-1.16-1_amd64.deb
-zstd -d < control.tar.zst | xz > control.tar.xz
-zstd -d < data.tar.zst | xz > data.tar.xz
-ar -m -c -a sdsd /tmp/LSA_lib_utils-1.16-1_amd64.deb debian-binary control.tar.xz data.tar.xz
-rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
-ar x LSA_lib_utils2-9.00-1_amd64.deb
-zstd -d < control.tar.zst | xz > control.tar.xz
-zstd -d < data.tar.zst | xz > data.tar.xz
- ar -m -c -a sdsd /tmp/LSA_lib_utils2-9.00-1_amd64.deb debian-binary control.tar.xz data.tar.xz
-rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
+    sudo apt update
+
+    sudo apt install zstd
+
+    ar x LSA_lib_utils-1.16-1_amd64.deb
+    zstd -d < control.tar.zst | xz > control.tar.xz
+    zstd -d < data.tar.zst | xz > data.tar.xz
+    ar -m -c -a sdsd /tmp/LSA_lib_utils-1.16-1_amd64.deb debian-binary control.tar.xz data.tar.xz
+    rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
+    ar x LSA_lib_utils2-9.00-1_amd64.deb
+    zstd -d < control.tar.zst | xz > control.tar.xz
+    zstd -d < data.tar.zst | xz > data.tar.xz
+    ar -m -c -a sdsd /tmp/LSA_lib_utils2-9.00-1_amd64.deb debian-binary control.tar.xz data.tar.xz
+    rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
 
 —делаем все файлы исполн€емыми (или сделайте команду дл€ файлов избирательно): 
 chmod +x *.*  
