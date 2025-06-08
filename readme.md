@@ -194,4 +194,4 @@
 
 Успешной интеграции и эксплуатации
 
-![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA%20LSI%20Storage%20Authority%20Software%20(how%20to%20click).png&raw=true)
+![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA%20LSI%20Storage%20Authority%20Software%20(how%20to%20click).png?raw=true)
