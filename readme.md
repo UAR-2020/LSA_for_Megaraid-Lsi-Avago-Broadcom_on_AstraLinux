@@ -96,7 +96,7 @@
 
 ¬ определенных случа€х необходимо выбрать RAID-адаптер с которым работать, к примеру если их несколько. ¬ оформлении, посередине экрана, можно заметить название контроллера на синем фоне, что в обычной среде кажетс€ обычным заголовком встроенного окна, здесь же это работает как огромна€ пр€моугольна€ кнопка с названием контроллера Ч нажимайте смело на названи€ и будут переходы по странице (см. файл "LSA LSI Storage Authority Software.png", да прост€т мен€ создатели данного интерфейса).
 
-![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA%20LSI%20Storage%20Authority%20Software%20(how%20to%20click).png?raw=true)
+![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA%20LSI%20Storage%20Authority%20Software%20(how%20to%20click)_Linux.png?raw=true)
 
 #  азалось бы, что еще нужно, наконец то получилось
 
