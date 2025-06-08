@@ -183,7 +183,7 @@
 
 ![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/start_control.png?raw=true)
 
-# При всех внештатных ситуациях и ненеполадках необходимо вернуться в начальное положение службы «деактивировано» и «остановлено» на выбранном сервере:
+# При всех внештатных ситуациях и неполадках необходимо вернуться в начальное положение службы «деактивировано» и «остановлено» на выбранном сервере:
 
     sudo systemctl disable LsiSASH.service
     sudo systemctl stop LsiSASH.service
