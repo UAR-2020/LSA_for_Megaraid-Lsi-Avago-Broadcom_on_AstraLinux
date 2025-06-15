@@ -25,7 +25,7 @@
     You should now be able to install the newly generated package:
         apt-get install /tmp/some-package.deb
 
-# Перейдем в каталог распакованного архива WebGUIRelease_Linux_8.004.010.000.zip (найти указанный релиз, листая их по ссылке https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa) и выполним действия изложенные выше, задействуя в apt расширенный репозиторий:
+# Перейдем в каталог распакованного архива WebGUIRelease_Linux_8.004.010.000.zip (найти указанный релиз, перебирая их множество по ссылке https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa) и выполним действия изложенные выше, задействуя в apt расширенный репозиторий:
 
     sudo apt update
 
