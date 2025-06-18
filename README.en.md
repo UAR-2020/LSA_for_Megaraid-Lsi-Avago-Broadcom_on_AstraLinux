@@ -76,7 +76,7 @@ The task was to start and manage the RAID. It was decided to configure the secur
 sudo systemctl stop LsiSASH.service
         (please note it stops quickly, but starts within 15-20 seconds)
 
-    Disable autification:
+    Disable authentication:
         sudo nano /opt/lsi/LSIStorageAuthority/conf/LSA.conf
            find the line
                # bypass authentication (use with caution)
