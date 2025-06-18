@@ -54,7 +54,7 @@ it is very clear and does not require a language translation).
     Let's make all files executable (or make a command for files selectively):
 chmod +x *.*  
 
-    We will install the already repackaged software (for more information about the launch keys, see the file LSA_Linux_64_readme.txt ):
+# We will install the already repackaged software (for more information about the launch keys, see the file LSA_Linux_64_readme.txt ):
 sudo ./install_deb.sh -s
         (when asked about agreeing to the license, answer Y and press Enter)
 
