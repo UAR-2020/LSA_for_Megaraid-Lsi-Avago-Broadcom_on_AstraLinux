@@ -1,5 +1,5 @@
-# During the operation of the equipment, for the possibility of configuring and maintaining RAID arrays of Megaraid, LSI, Avago, Broadcom controllers in the AstraLinux OS environment versions 1.6, 1.7, 1.8 (https://ru.wikipedia.org/wiki/Astra_Linux ), the task arose to deploy the LSA LSI Storage Authority Software. Software unification was not required
-In my case, the account of the first user was used when installing the OS, which is equipped with sudo by default (if your user is not the first in the system, then resolve this issue with separate measures).
+
+# During the operation of the equipment, for the possibility of configuring and maintaining RAID arrays of Megaraid, LSI, Avago, Broadcom controllers in the AstraLinux OS environment versions 1.6, 1.7, 1.8 (https://ru.wikipedia.org/wiki/Astra_Linux ), the task arose to deploy the LSA LSI Storage Authority Software. Software unification was not required In my case, the account of the first user was used when installing the OS, which is equipped with sudo by default (if your user is not the first in the system, then resolve this issue with separate measures).
 Two implementation methods were chosen, which were performed in parallel.:
 1. Search for compatible deb packages and install them on the above OS versions;
 2. Search for package sources on the Broadcom website, build and install them, again for each OS separately (if it is impossible to build in AstraLinux, do it in the appropriate Debian version).
@@ -25,7 +25,7 @@ it is very clear and does not require a language translation).
     You should now be able to install the newly generated package:
         apt-get install /tmp/some-package.deb
 
-# Go to the directory of the unpacked archive WebGUIRelease_Linux_8.004.010.000.zip (find the specified release by going through the set of them at the link https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa ) and follow the steps outlined above by using the extended repository in apt.:
+# Go to the directory of the unpacked archive WebGUIRelease_Linux_8.004.010.000.zip (find the specified release by going through the set of them at the link https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa ) and follow the steps outlined above by using the extended repository in apt:
 
     sudo apt update
 
@@ -52,7 +52,8 @@ it is very clear and does not require a language translation).
     rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
 
     Let's make all files executable (or make a command for files selectively):
-chmod +x *.*  
+
+      chmod +x *.*  
 
 # We will install the already repackaged software (for more information about the launch keys, see the file LSA_Linux_64_readme.txt ):
 sudo ./install_deb.sh -s
@@ -75,12 +76,12 @@ The task was to start and manage the RAID. It was decided to configure the secur
 sudo systemctl stop LsiSASH.service
         (please note it stops quickly, but starts within 15-20 seconds)
 
-    Disable autism:
+    Disable autification:
         sudo nano /opt/lsi/LSIStorageAuthority/conf/LSA.conf
            find the line
                # bypass authentication (use with caution)
                bypass_authentication = 0
-and replace with 
+           and replace with 
                # bypass authentication (use with caution)
                bypass_authentication = 1      
            Press ctrl+o and enter (save the config)
@@ -159,7 +160,7 @@ To do this, install the necessary packages.:
 
 **You should pay special attention to port 9000. It is used for internal exchange of LsiSASH service. We had a high-performance MinIO distributed object data warehouse (S3 compatibility) running on our servers on this port. The ss utility helped, which shows not only the ports, but also the process that occupied them. Reconfigured the MinIO to a different port. Other processes may also use it, take action. Read the file LSA_Linux_64_readme.txt - it specifies the installation modes and the ability to change the default ports (section "Installation Instructions").
 
-#Zoom to display the dialog box.
+# Zoom to display the dialog box.
 Sometimes the dialog menu is duplicated and displayed below. To display correctly, you need to use a mouse-type manipulator to resize the window or scroll to change the font size in the window, in both cases individually increase or decrease them.
 
 In any case, before using it, it is necessary to finalize all of the above according to the safety requirements of the environment where it will function.
