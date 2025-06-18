@@ -194,7 +194,7 @@ Next, run the control via ”lsacontrol.sh ” (it is necessary to have sudo rig
 
 The need to assemble LSA packages from source, as the second method of solving the problem, will now be only in case of unsolvable malfunctions during operation. By coincidence, this solution, as a unified software, was tested and applied on the AstraLinux OS on versions 1.6, 1.7, 1.8 with a variety of cores.
 
-To deploy LSA in the AstraLinux OS, a file with installation instructions is posted ”howtoinst.txt ” and prepared repackaged files.
+To deploy LSA in the AstraLinux OS, a file with installation instructions is posted ”howtoinst-en.txt ” and prepared repackaged files.
 
 # This solution can be applied to newer versions of LSA (https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa ). Please pay attention to the need to use a VPN in a situation with difficulty displaying a resource.
 
