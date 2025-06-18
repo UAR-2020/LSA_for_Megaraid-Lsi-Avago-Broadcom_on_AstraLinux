@@ -5,3 +5,5 @@
 ---
 
 Выберите README с вашей версией языкового оформления  /  Select the README with your version of the language design
+
+![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA.png?raw=true)
