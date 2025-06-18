@@ -1,0 +1,61 @@
+In AstraLinux, by default, the first user is assigned root rights,
+i.e. he is authorized to execute the sudo command_name in the cli.
+(no root accounts need to be created/opened/activated!!!)
+
+1. copy the inst directory, for example, to the user's home directory
+
+2. in the cli, go to the inst directory with the cd /home/user name/inst command
+
+3. run the command chmod +x *.* (make all files executable)
+
+4. Run the sudo command./install_deb.sh -s
+
+5. to the question about agreeing to the license, answer Y and press Enter
+
+6. waiting for the installation to finish
+
+7. if everything is installed successfully, run sudo systemctl stop LsiSASH.service
+
+8.    sudo nano /opt/lsi/LSIStorageAuthority/conf/LSA.conf
+       find the line
+
+       # bypass authentication (use with caution)
+       bypass_authentication = 0
+
+       and replace it with 
+
+       # bypass authentication (use with caution)
+       bypass_authentication = 1
+       
+       Press ctrl+o and enter (save the config)
+
+9. run sudo systemctl start LsiSASH.service to start the service
+
+10. run sudo systemctl status LsiSASH.service (make sure it works and see...)
+ LsiSASH.service - LSB: start and stop LSIStorageAuthority service
+   Loaded: loaded (/etc/init.d/LsiSASH; generated)
+   Active: active (running) since Fri 2024-12-06 12:35:19 MSK; 1h 18min ago
+     Docs: man:systemd-sysv-generator(8)
+    Tasks: 9 (limit: 2255)
+   Memory: 30.3M
+      CPU: 989ms
+   CGroup: /system.slice/LsiSASH.service
+           ├─1016 /opt/lsi/LSA/libs2/./slpd
+           ├─1039 nginx: master process ./nginx -p .
+           ├─1045 nginx: worker process
+           └─1134 ./LSA -start
+
+dec 06 12:34:46 astra1 systemd[1]: Starting LSB: start and stop LSIStorageAuthority service...
+dec 06 12:34:46 astra1 LsiSASH[451]: /etc/init.d/LsiSASH: line 25: rpm: command not found
+dec 06 12:35:19 astra1 LsiSASH[451]: Starting LSI Storage Authority: [ OK ]
+dec 06 12:35:19 astra1 systemd[1]: Started LSB: start and stop LSIStorageAuthority service. 
+
+11. log in to the web browser at localhost:2463 ( or http://localhost:2463 ) or 127.0.0.1:2463 (or http://127.0.0.1:2463 )
+
+12. run sudo systemctl stop LsiSASH.service to stop the service
+
+13. run sudo systemctl disable LsiSASH.service to disable the auto-start of the service (to exclude 100% CPU usage in the future)
+
+14. Install the necessary packages and use the snap-in lsacontrol.sh
+
+15. Read carefully readme.md of this project.
