@@ -1,6 +1,6 @@
 # Multilanguage README 
-[![en](https://img.shields.io/badge/lang-ru-red.svg)]([https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.md](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.en.md))
-[![pt-br](https://img.shields.io/badge/lang-en-green.svg)]([https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.en.md](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.ru.md))
+[![en](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.en.md)
+[![pt-br](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.ru.md)
 
 ---
 
