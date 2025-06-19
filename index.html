@@ -2,9 +2,27 @@
 <html>
 <head>
     <title>LSAControl</title>
+    <!-- Подключаем zero-md -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@2/dist/zero-md.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        zero-md {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to LSAControl</h1>
-    <p>This is a placeholder page.</p>
+    <h1>Документация LSAControl</h1>
+    
+    <!-- Рендерим README.md -->
+    <zero-md src="README.md"></zero-md>
+
 </body>
 </html>
