@@ -4,10 +4,16 @@
 
 ---
 
-Выберите README с вашей версией языкового оформления  /  Select the README with your version of the language design
+Select the README with your version of the language design / Выберите README с вашей версией языкового оформления
 
 ---
 
 # LSA LSI Storage Authority Software for controllers Megaraid/LSI/Avago/Broadcom on Linux 
 
 ![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA.png?raw=true)
+
+---
+
+# Welcome to discussions! / Добро пожаловать на обсуждения!
+
+https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/discussions
