@@ -12,6 +12,8 @@ Select the README with your version of the language design / Выберите RE
 
 ![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA.png?raw=true)
 
+https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa
+
 ---
 
 A pseudographic GUI interface for managing LSA services on remote servers is provided to your attention / Вашему вниманию представлен псевдографический GUI для управления сервисами LSA на удалённых серверах
