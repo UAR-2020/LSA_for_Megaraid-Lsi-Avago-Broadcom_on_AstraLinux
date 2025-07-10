@@ -165,7 +165,7 @@ Sometimes the dialog menu is duplicated and displayed below. To display correctl
 
 In any case, before using it, it is necessary to finalize all of the above according to the safety requirements of the environment where it will function.
 
-Create a shortcut to easily launch our project.
+Create a shortcut to easily launch our project. (Note the paths of the /home/YOUR shortcut itself_USER/Desktop/LSA.desktop, where you need to specify the desktop user, and /home/admin/LSA/lsacontrol.sh - the path to the script. These paths are individual and require customization)
 
     nano /home/admin/Desktop/LSA.desktop
 
