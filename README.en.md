@@ -1,5 +1,6 @@
 
-# During the operation of the equipment, for the possibility of configuring and maintaining RAID arrays of Megaraid, LSI, Avago, Broadcom controllers in the AstraLinux OS environment versions 1.6, 1.7, 1.8 (https://ru.wikipedia.org/wiki/Astra_Linux ), the task arose to deploy the LSA LSI Storage Authority Software. Software unification was not required In my case, the account of the first user was used when installing the OS, which is equipped with sudo by default (if your user is not the first in the system, then resolve this issue with separate measures).
+# During the operation of the equipment, for the possibility of configuring and maintaining RAID arrays of Megaraid, LSI, Avago, Broadcom controllers in the AstraLinux OS environment versions 1.6, 1.7, 1.8 (https://ru.wikipedia.org/wiki/Astra_Linux ), the task arose to deploy the LSA LSI Storage Authority Software. 
+Software unification was not required In my case, the account of the first user was used when installing the OS, which is equipped with sudo by default (if your user is not the first in the system, then resolve this issue with separate measures).
 Two implementation methods were chosen, which were performed in parallel.:
 1. Search for compatible deb packages and install them on the above OS versions;
 2. Search for package sources on the Broadcom website, build and install them, again for each OS separately (if it is impossible to build in AstraLinux, do it in the appropriate Debian version).
