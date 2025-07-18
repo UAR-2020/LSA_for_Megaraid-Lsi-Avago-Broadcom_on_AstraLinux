@@ -198,7 +198,7 @@ The need to assemble LSA packages from source, as the second method of solving t
 
 To deploy LSA in the AstraLinux OS, a file with installation instructions is posted ”howtoinst-en.txt ” and prepared repackaged files.
 
-# This solution can be applied to newer versions of LSA (https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa ). Please pay attention to the need to use a VPN in a situation with difficulty displaying a resource.
+# This solution can be applied to newer versions of LSA (https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa)
 
 https://techdocs.broadcom.com/lsa-lsi-storage-authority-software - I recommend reading the article in this knowledge base
 
