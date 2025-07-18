@@ -16,7 +16,7 @@ https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa
 
 ---
 
-A pseudographic GUI interface for managing LSA services on remote servers is provided to your attention / Вашему вниманию представлен псевдографический GUI интерфейс для управления сервисами LSA на удалённых серверах
+A pseudoGUI for managing LSA services on remote servers is provided to your attention / Вашему вниманию представлен псевдоGUI для управления сервисами LSA на удалённых серверах
 
 # Welcome to discussions! / Добро пожаловать на обсуждения!
 
