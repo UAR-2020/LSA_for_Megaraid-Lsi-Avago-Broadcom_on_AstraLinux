@@ -11,7 +11,7 @@ a version of the WebGUIRelease_Linux_8.004.010.000 software that meets the requi
 # However, an error occurred while installing the packages with a message about unsupported compression
 In the course of clarifying the reasons for the failure to unpack the files, a solution was found that explained the nature of what was happening and the solutions, without the need for sysdig/ptrace debugging of what was happening.
 (I thank the authors of the posts for the arguments left on the Internet "https://unix.stackexchange.com/questions/669004/zst-compression-not-supported-by-apt-dpkg ", 
-it is very clear and does not require a language translation).
+it is very clear and It does not require any effort).
 
     If you are running Debian < 12 and need to install a .deb package that uses zstd, you can repack it:
     Extract files from the archive
