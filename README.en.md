@@ -114,7 +114,7 @@ During operation, when our service was ignored to manage the resources of a high
 
 The nature of what is happening has yet to be studied. It was found that the impact of 100% CPU utilization of our service does not occur immediately, but after a certain long period of time. It turns out that it is possible to view the status, replace the disk, rebuild the RAID, i.e. transfer the necessary commands to the controller and disconnect after the right time, but the service cannot be left running on an ongoing basis, so as not to load the processor at 100%.
 
-# Let's create a snap-in to automatically start our service, manage arrays, and stop the service on servers from the operator's workplace via a pseudographic GUI interface in bash
+# Let's create a snap-in to automatically start our service, manage arrays, and stop the service on servers from the operator's workplace via a pseudoGUI in bash
 
 To do this, install the necessary packages.:
 
