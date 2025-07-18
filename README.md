@@ -4,7 +4,7 @@
 
 ---
 
-Select the README with your version of the language design / Выберите README с вашей версией языкового оформления
+Select the README with your version of the language design [Lang|En] / Выберите README с вашей версией языкового оформления [Lang|Ru]
 
 ---
 
