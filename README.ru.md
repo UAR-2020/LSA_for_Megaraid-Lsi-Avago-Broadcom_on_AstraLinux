@@ -198,7 +198,7 @@
 
 Для развертывания LSA в ОС AstraLinux выложены файл с инструкцией по установке ”howtoinst-ru.txt” и подготовленные перепакованные файлы.
 
-# Данное решение можно применить к более новым версиям LSA (https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa). Прошу обратить внимание на необходимость использования VPN в ситуации с трудностью отображения ресурса
+# Данное решение можно применить к более новым версиям LSA (https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa)
 
 https://techdocs.broadcom.com/lsa-lsi-storage-authority-software  - рекомендую к чтению статьи данной базы знаний
 
