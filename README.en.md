@@ -200,4 +200,6 @@ To deploy LSA in the AstraLinux OS, a file with installation instructions is pos
 
 # This solution can be applied to newer versions of LSA (https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa ). Please pay attention to the need to use a VPN in a situation with difficulty displaying a resource.
 
+https://techdocs.broadcom.com/lsa-lsi-storage-authority-software - I recommend reading the article in this knowledge base
+
 Successful integration and operation
