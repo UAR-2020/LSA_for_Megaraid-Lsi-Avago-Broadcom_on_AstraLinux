@@ -11,7 +11,7 @@
 # Однако, при установке пакетов возникла ошибка с сообщением о неподдерживаемом сжатии
 В ходе выяснения причин отказа в распаковке файлов было найдено решение, которое объяснило природу происходящего и пути решения, без необходимости sysdig/ptrace отладки происходящего
 (благодарю авторов постов за рассуждения, оставленные на просторах Интернет  «https://unix.stackexchange.com/questions/669004/zst-compression-not-supported-by-apt-dpkg», 
-предельно ясно и не требует языкового перевода).
+предельно ясно и не требует пояснений).
 
     If you are running Debian < 12 and need to install a .deb package that uses zstd, you can repack it:
     Extract files from the archive
