@@ -16,7 +16,7 @@
 + Latest versions of LSA for Linux [новейшие верcии LSA для Linux]:
 https://www.broadcom.com/site-search?page=1&per_page=100&q=lsa&sort_direction[pages]=desc&sort_field[pages]=sort_date
 
-+ Manuals [Руководства]:
++ Manuals [Документация]:
 https://techdocs.broadcom.com/lsa-lsi-storage-authority-software
 
 ---
