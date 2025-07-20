@@ -4,7 +4,7 @@
 
 ---
 
-Select the README with your version of the language design [Lang|En] / Выберите README с вашей версией языкового оформления [Lang|Ru]
+Выберите README с вашей версией языкового оформления [Lang|Ru]  /  Select the README with your version of the language design [Lang|En]  
 
 ---
 
@@ -16,8 +16,8 @@ https://www.broadcom.com/site-search?page=7&per_page=10&q=lsa
 
 ---
 
-A pseudoGUI for managing LSA services on remote servers is provided to your attention / Вашему вниманию представлен псевдоGUI для управления сервисами LSA на удалённых серверах
+Вашему вниманию представлен псевдоGUI для управления сервисами LSA на удалённых серверах  /  A pseudoGUI for managing LSA services on remote servers is provided to your attention  
 
-# Welcome to discussions! / Добро пожаловать на обсуждения!
+# Добро пожаловать на обсуждения!  /  Welcome to discussions!  
 
 https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/discussions
