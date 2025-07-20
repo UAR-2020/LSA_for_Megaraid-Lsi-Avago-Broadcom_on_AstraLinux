@@ -19,8 +19,6 @@ https://techdocs.broadcom.com/lsa-lsi-storage-authority-software
 
 ---
 
-Вашему вниманию представлен псевдоGUI для управления сервисами LSA на удалённых серверах  /  A pseudoGUI for managing LSA services on remote servers is provided to your attention  
-
 # Добро пожаловать на обсуждения!  /  Welcome to discussions!  
 
 https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/discussions
