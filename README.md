@@ -13,8 +13,10 @@
 
 ![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA.png?raw=true)
 
++ Latest versions of LSA for Linux [новейшие верcии LSA для Linux]:
 https://www.broadcom.com/site-search?page=1&per_page=100&q=lsa&sort_direction[pages]=desc&sort_field[pages]=sort_date
 
++ Manuals [Руководства]:
 https://techdocs.broadcom.com/lsa-lsi-storage-authority-software
 
 ---
