@@ -6,7 +6,7 @@
 
 ---
 
-# LSA LSI Storage Authority Software for controllers Megaraid/LSI/Avago/Broadcom on Linux 
+# LSA LSI Storage Authority Software for controllers Megaraid/LSI/Avago/Broadcom on Linux and repacking packages .deb
 
 ![alt text](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/LSA.png?raw=true)
 
