@@ -1,5 +1,5 @@
 
-# During the operation of the equipment, for the possibility of configuring and maintaining RAID arrays of Megaraid, LSI, Avago, Broadcom controllers in the AstraLinux OS environment versions 1.6, 1.7, 1.8 (https://ru.wikipedia.org/wiki/Astra_Linux ), the task arose to deploy the LSA LSI Storage Authority Software. 
+# During the operation of the equipment, for the possibility of configuring and maintaining RAID arrays of Megaraid, LSI, Avago, Broadcom controllers in the AstraLinux OS environment versions 1.6, 1.7, 1.8 (https://ru.wikipedia.org/wiki/Astra_Linux ), the task arose to deploy the LSA LSI Storage Authority Software 
 Software unification was not required In my case, the account of the first user was used when installing the OS, which is equipped with sudo by default (if your user is not the first in the system, then resolve this issue with separate measures).
 Two implementation methods were chosen, which were performed in parallel.:
 1. Search for compatible deb packages and install them on the above OS versions;
@@ -161,7 +161,7 @@ To do this, install the necessary packages.:
 
 **You should pay special attention to port 9000. It is used for internal exchange of LsiSASH service. We had a high-performance MinIO distributed object data warehouse (S3 compatibility) running on our servers on this port. The ss utility helped, which shows not only the ports, but also the process that occupied them. Reconfigured the MinIO to a different port. Other processes may also use it, take action. Read the file LSA_Linux_64_readme.txt - it specifies the installation modes and the ability to change the default ports (section "Installation Instructions").
 
-# Zoom to display the dialog box.
+# Zoom to display the dialog box
 Sometimes the dialog menu is duplicated and displayed below. To display correctly, you need to use a mouse-type manipulator to resize the window or scroll to change the font size in the window, in both cases individually increase or decrease them.
 
 In any case, before using it, it is necessary to finalize all of the above according to the safety requirements of the environment where it will function.
