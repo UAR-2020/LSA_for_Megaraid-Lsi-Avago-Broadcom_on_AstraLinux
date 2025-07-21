@@ -68,7 +68,7 @@ sudo ./install_deb.sh -s
         localhost:2463 ( or http://localhost:2463 ) or 127.0.0.1:2463 (or http://127.0.0.1:2463 ),
 or use the address or alieses assigned to your network adapters.
 
-# The above actions can be performed on a variety of DEB-like operating systems, there are no restrictions here, be it Debian, Ubuntu and others. And here's the second surprise — when logging in, the user's username and password are requested. 
+# The above actions can be performed on a variety of DEB-like operating systems, there are no restrictions here, be it Debian, Ubuntu and others. And here's the second surprise — when logging in, the user's username and password are requested 
 In our case, this user must be root (not to be confused with the sudo capabilities of the user), moreover, verification via LDAP is used. The root user is not activated on our systems for security reasons.
 
 The task was to start and manage the RAID. It was decided to configure the security of these connections separately upon completion of testing the mechanisms, by installing and configuring LDAP, configuring user rights, restrictions via iptables, or configuring the configuration file of this service, or even placing it in a sandbox (however, this is another story, no less intense than this one and requires separate consideration).
