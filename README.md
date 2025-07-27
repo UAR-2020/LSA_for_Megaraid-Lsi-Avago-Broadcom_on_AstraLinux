@@ -1,6 +1,6 @@
 # Multilanguage README
 [![en](https://img.shields.io/badge/Lang-Ru-red.svg)](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.ru.md)
-[![pt-br](https://img.shields.io/badge/Lang-En-green.svg)](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.en.md)
+[![pt-br](https://img.shields.io/badge/Lang-En-blue.svg)](https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/blob/main/README.en.md)
 
 Выберите README с вашей версией языкового оформления [Lang|Ru]  /  Select the README with your version of the language design [Lang|En]  
 
