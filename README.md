@@ -25,5 +25,6 @@
 
 https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/discussions
 
-LSI MegaRaid 92XX is not supported (see the Manuals) / LSI MegaRaid 92XX is not supported (see the Documentation)
+LSI MegaRaid 92XX is not supported (see the Manuals) / LSI MegaRAID 92XX не поддерживается (см. [Документацию])
+
 
