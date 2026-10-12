@@ -27,4 +27,5 @@ https://github.com/UAR-2020/LSA_for_Megaraid-Lsi-Avago-Broadcom_on_AstraLinux/di
 
 LSI MegaRaid 92XX is not supported (see the Manuals) / LSI MegaRAID 92XX не поддерживается (см. [Документацию])
 
-
+https://github.com/UAR-2020/Ready_Easy_Local_AI_on_AstraLinux
+My New repo about Ready Easy Local AI on AstraLinux - see you! 
